@@ -63,6 +63,52 @@ Do NOT upload your `secrets.json` file. Keep credentials private.
 ✔ Access token generated
 ✔ User email retrieved
 
+### 🟢 Step 1: Choose Google Account
+
+User selects the Google account to continue authentication.
+
+![Login Step 1](screenshots/login-step1.png)
+
+---
+
+### 🟢 Step 2: Confirm Sign-In
+
+User confirms permission to sign in to the application.
+
+![Login Step 2](screenshots/login-step2.png)
+
+---
+
+### 🟢 Step 3: Authorization Successful
+
+After successful login, the local server confirms authorization.
+
+![Login Step 3](screenshots/login-step3.png)
+
+---
+
+## 🧾 Sample Console Output
+
+After authentication, the script prints token details:
+
+```text
+Tokens:
+{
+  'access_token': 'ya29.a0AfH6SM...',
+  'expires_in': 3599,
+  'refresh_token': '1//0gFExample...',
+  'scope': 'openid email profile',
+  'token_type': 'Bearer'
+}
+
+Token info:
+{
+  'email_verified': 'true',
+  'scope': 'openid email profile',
+  'expires_in': '3598',
+  'access_type': 'offline'
+}
+
 ## 🎯 Use Cases
 
 * Web & mobile login systems
